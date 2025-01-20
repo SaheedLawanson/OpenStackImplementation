@@ -139,7 +139,7 @@ const dummy_cache: DummyCache = {
 };
 
 const authTokenIsValid = (data: OpStackAuthResponse | null) => {
-  console.log("authTokenIsValid::INFO::Checking if token is valid");
+  // console.log("authTokenIsValid::INFO::Checking if token is valid");
   return !!data?.token && new Date(data.token.expires_at) < new Date();
 };
 
