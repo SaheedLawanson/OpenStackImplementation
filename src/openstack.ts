@@ -145,11 +145,11 @@ const authTokenIsValid = (data: OpStackAuthResponse | null) => {
 
 export const authenticate = async () => {
   if (authTokenIsValid(dummy_cache["opStackAuthData"])) {
-    console.log(
-      `openstack.authenticate::DEBUG::Reusing cached token: ${JSON.stringify(
-        dummy_cache
-      )}`
-    );
+    // console.log(
+    //   `openstack.authenticate::DEBUG::Reusing cached token: ${JSON.stringify(
+    //     dummy_cache
+    //   )}`
+    // );
     return dummy_cache["opStackAuthData"]!.accessToken;
   }
 
