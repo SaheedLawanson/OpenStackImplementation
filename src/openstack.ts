@@ -182,9 +182,9 @@ export const authenticate = async () => {
       },
     }),
   });
-  console.log(
-    `openstack.authenticate::DEBUG::Provider response: ${res.status}`
-  );
+  // console.log(
+  //   `openstack.authenticate::DEBUG::Provider response: ${res.status}`
+  // );
 
   if (res.status !== 201) throw "An error occurred during authentication";
 
